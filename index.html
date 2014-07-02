@@ -27,6 +27,26 @@
 	<script type='text/javascript' src='/js/main.js'></script>
 	<link rel="canonical" href="http://herohuyongtao.github.io/">
 	<link rel="shortcut icon" href="http://herohuyongtao.github.io/images/logo.ico">
+	
+	<!-- to toggle text -->
+	<style type="text/css">
+		a.toggle_text_link {
+			cursor:pointer;
+		}
+	
+		pre.invisible_text {
+			display: none;
+		}
+	</style>
+	<script language="javascript" type="text/javascript">
+		function toggle(element) {
+			if(element.style.display=="block") {
+				element.style.display="none";
+			} else {
+				element.style.display="block";
+			}
+		}
+	</script>
 </head>
 
 <body class="home page page-id-4 page-template-default top-navbar">
@@ -230,7 +250,7 @@
 								<!-- site credits -->
 								<a class="toggle_text_link" onclick="javascript:toggle(site_credits);">Site Credits</a>
 								<pre id="site_credits" class="invisible_text">
-This site was built using <a href="http://twitter.github.io/bootstrap/">Bootstrap</a>, a front-end framework for web development. The style of this site is inspired by <a href="http://richardt.name/">Dr. Christian Richardt</a>'s personal website.</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->								
+This site was built using <a href="http://twitter.github.io/bootstrap/">Bootstrap</a>, a front-end framework for web development. <br /><br /> The style of this site is inspired by <a href="http://richardt.name/">Dr. Christian Richardt</a>'s personal website.</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->								
 							</div>				
 						</div>
 					</section>		
