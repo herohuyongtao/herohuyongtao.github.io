@@ -79,6 +79,193 @@
 		<div id="content" class="row">
 			<div id="main" class="span12" role="main">
 				<div class="page-header">
+					<h1>Publications</h1>
+				</div>
+
+				<div align="center">
+					<img src="/images/scholar.png" width="15" height="15" /> <a href="https://scholar.google.com.hk/citations?user=uaKgQSEAAAAJ&hl=en">Google Scholar</a>
+					&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+					<img src="/images/dblp.png" width="15" height="15" /> <a href="http://dblp.uni-trier.de/pers/hd/h/Hu:Yongtao">DBLP</a>
+				</div>
+
+				<div class="row" style="margin-bottom: 1em;">
+					<div class="span6 offset3">
+						<h2>2015</h2>
+					</div>
+				</div>
+
+				<div class="row" style="margin-bottom: 1em;">
+					<div class="span2 offset1">
+						<a href="/research/publications/speaker-naming/">
+							<img class="dropshadow pull-right" alt="" src="/research/publications/speaker-naming/thumbnail.png" width="150" height="90" />
+						</a>
+					</div>
+					<div class="span8">
+						<a href="/research/publications/speaker-naming/">
+							<strong>Deep Multimodal Speaker Naming</strong>
+						</a>
+						<br />
+						<b>Yongtao Hu</b>,
+						<a href="http://www.jimmyren.com/">Jimmy Ren</a>,
+						<a href="http://jwdai.net/">Jingwen Dai</a>,
+						<a href="http://iris.usc.edu/Vision-Users/OldUsers/cyuan/">Chang Yuan</a>,
+						<a href="http://lxu.me/">Li Xu</a>, and
+						<a href="http://i.cs.hku.hk/~wenping/">Wenping Wang</a>
+						<br />
+						<em>ACM MM 2015</em>
+						<br />
+						<em>"realtime speaker naming through deeply learned face-audio fusion"</em>
+						<br />
+						<ul class="inline middot">
+							<li><em class="icon-home"></em> <a href="/research/publications/speaker-naming/">project page</a></li>
+							<li><em class="icon-file"></em> <a href="http://arxiv.org/pdf/1507.04831v1.pdf">arXiv</a></li>
+							<li>
+								<em class="icon-circle-info"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(hu2015speakernaming);">abstract</a>
+								<pre id="hu2015speakernaming" class="invisible_text">
+Automatic speaker naming is the problem of localizing as well as identifying each speaking character in a TV/movie/live show video. This is a challenging problem mainly attributes to its multimodal nature, namely face cue alone is insufficient to achieve good performance. Previous multimodal approaches to this problem usually process the data of different modalities individually and merge them using handcrafted heuristics. Such approaches work well for simple scenes, but fail to achieve high performance for speakers with large appearance variations. In this paper, we propose a novel convolutional neural networks (CNN) based learning framework to automatically learn the fusion function of both face and audio cues. We show that without using face tracking, facial landmark localization or subtitle/transcript, our system with robust multimodal feature extraction is able to achieve state-of-the-art speaker naming performance evaluated on two diverse TV series. The dataset and implementation of our algorithm are publicly available online.</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+							</li>
+							<li><em class="icon-briefcase"></em> <a href="/research/publications/speaker-naming/dataset">dataset</a></li>
+							<li><em class="icon-turtle"></em> <a href="https://bitbucket.org/herohuyongtao/mm15-speaker-naming">source code</a></li>
+							<li>
+								<em class="icon-bookmark"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(hu2015speakernaming2);">bibtex</a>
+								<pre id="hu2015speakernaming2" class="invisible_text">
+@inproceedings{hu2015deep,
+  title={{Deep Multimodal Speaker Naming}},
+  author={Hu, Yongtao and Ren, Jimmy SJ. and Dai, Jingwen and Yuan, Chang and Xu, Li and Wang, Wenping},
+  booktitle={Proceedings of the 23rd Annual ACM International Conference on Multimedia},
+  pages={xxx--xxx},
+  year={2015},
+  organization={ACM}
+}</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+							</li>
+							<li><em class="icon-chevron-right"></em> <a href="http://dx.doi.org/10.1145/2733373.2806293">DOI</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="row" style="margin-bottom: 1em;">
+					<div class="span2 offset1">
+						<a href="">
+							<img class="dropshadow pull-right" alt="" src="/research/publications/video2comics/thumbnail.png" width="150" height="90" />
+						</a>
+					</div>
+					<div class="span8">
+						<a href="">
+							<strong>Content-Aware Video2Comics with Manga-Style Layout</strong>
+						</a>
+						<br />
+						<a href="">Guangmei Jing</a>,
+						<br />
+						<b>Yongtao Hu</b>,
+						<a href="http://cs.nju.edu.cn/ywguo/">Yanwen Guo</a>,
+						<a href="http://i.cs.hku.hk/~yzyu/">Yizhou Yu</a>, and
+						<a href="http://i.cs.hku.hk/~wenping/">Wenping Wang</a>
+						<br />
+						<em>IEEE TMM 2015</em>
+						<br />
+						<em>"auto-convert conversational videos into comics with manga-style layout"</em>
+						<br />
+						<ul class="inline middot">
+							<!--
+							<li><em class="icon-home"></em> <a href="/research/publications/speaker-naming/">project page</a></li>
+							<li><em class="icon-file"></em> <a href="http://arxiv.org/pdf/1507.04831v1.pdf">arXiv</a></li>
+							-->
+							<li>
+								<em class="icon-circle-info"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(jing2015sontent_abstract);">abstract</a>
+								<pre id="jing2015sontent_abstract" class="invisible_text">
+We introduce in this paper a new approach that conveniently converts conversational videos into comics with manga-style layout. With our approach, the manga-style layout of a comic page is achieved in a content-driven manner, and the main components, including panels and word balloons, that constitute a visually pleasing comic page are intelligently organized. Our approach extracts key frames on speakers by using a speaker detection technique such that word balloons can be placed near the corresponding speakers. We qualitatively measure the information contained in a comic page. With the initial layout automatically determined, the ﬁnal comic page is obtained by maximizing such a measure and optimizing the parameters relating to the optimal display of comics. An efﬁcient Markov chain Monte Carlo sampling algorithm is designed for the optimization. Our user study demonstrates that users much prefer our manga-style comics to purely Western style comics. Extensive experiments and comparisons against previous work also verify the effectiveness of our approach.
+							</li>
+							<li>
+								<em class="icon-bookmark"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(jing2015sontent_bibtex);">bibtex</a>
+								<pre id="jing2015sontent_bibtex" class="invisible_text">
+@article{jing2015sontent,
+  title={{Content-Aware Video2Comics with Manga-Style Layout}},
+  author={Jing, Guangmei and Hu, Yongtao and Guo, Yanwen and Yu, Yizhou and Wang, Wenping},
+  journal={IEEE Transactions on Multimedia (TMM)},
+  volume={},
+  number={},
+  articleno={},
+  numpages={},
+  year={2015},
+  publisher={IEEE}
+}</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+							</li>
+							<!--
+							<li><em class="icon-chevron-right"></em> <a href="http://dx.doi.org/10.1145/2733373.2806293">DOI</a></li>
+							-->
+						</ul>
+					</div>
+				</div>
+
+				<div class="row" style="margin-bottom: 1em;">
+					<div class="span6 offset3">
+						<h2>2014</h2>
+					</div>
+				</div>
+
+				<div class="row" style="margin-bottom: 1em;">
+					<div class="span2 offset1">
+						<a href="/research/publications/speaker-following-subtitles/">
+							<img class="dropshadow pull-right" alt="" src="/research/publications/speaker-following-subtitles/thumbnail.png" width="150" height="90" />
+						</a>
+					</div>
+					<div class="span8">
+						<a href="/research/publications/speaker-following-subtitles/">
+							<strong>Speaker-Following Video Subtitles</strong>
+						</a>
+						<br />
+						<b>Yongtao Hu</b>,
+						<a href="http://www0.cs.ucl.ac.uk/staff/j.kautz/">Jan Kautz</a>,
+						<a href="http://i.cs.hku.hk/~yzyu/">Yizhou Yu</a>, and
+						<a href="http://i.cs.hku.hk/~wenping/">Wenping Wang</a>
+						<br />
+						<em>ACM TOMM 2014</em>
+						<br />
+						<em>"auto-generate speaker-following subtitles to enhance video viewing experience"</em>
+						<br />
+						<ul class="inline middot">
+							<li><em class="icon-home"></em> <a href="/research/publications/speaker-following-subtitles/">project page</a></li>
+							<li><em class="icon-file"></em> <a href="http://arxiv.org/pdf/1407.5145v1.pdf">arXiv (with color)</a></li>
+							<li><em class="icon-file"></em> <a href="/research/publications/speaker-following-subtitles/paper.pdf">paper</a></li>
+							<li>
+								<em class="icon-circle-info"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(hu2014speakerfollowing2);">abstract</a>
+								<pre id="hu2014speakerfollowing2" class="invisible_text">
+We propose a new method for improving the presentation of subtitles in video (e.g. TV and movies). With conventional subtitles, the viewer has to constantly look away from the main viewing area to read the subtitles at the bottom of the screen, which disrupts the viewing experience and causes unnecessary eyestrain. Our method places on-screen subtitles next to the respective speakers to allow the viewer to follow the visual content while simultaneously reading the subtitles. We use novel identification algorithms to detect the speakers based on audio and visual information. Then the placement of the subtitles is determined using global optimization. A comprehensive usability study indicated that our subtitle placement method outperformed both conventional fixed-position subtitling and another previous dynamic subtitling method in terms of enhancing the overall viewing experience and reducing eyestrain.</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+							</li>
+							<li>
+								<em class="icon-bookmark"></em>
+								<a class="toggle_text_link" onclick="javascript:toggle(hu2014speakerfollowing);">bibtex</a>
+								<pre id="hu2014speakerfollowing" class="invisible_text">
+@article{hu2014speaker,
+  title={{Speaker-Following Video Subtitles}},
+  author={Hu, Yongtao and Kautz, Jan and Yu, Yizhou and Wang, Wenping},
+  journal={ACM Transactions on Multimedia Computing, Communications, and Applications (TOMM)},
+  volume={11},
+  number={2},
+  articleno={32},
+  numpages={17},
+  year={2014},
+  publisher={ACM}
+}</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+							</li>
+							<li><em class="icon-chevron-right"></em> <a href="http://dx.doi.org/10.1145/2632111">DOI</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<p>&nbsp;</p>
+
+			</div><!-- /#main -->
+		</div><!-- /#content -->
+    </div><!-- /#wrap -->
+
+			<div id="main" class="span12" role="main">
+				<div class="page-header">
 					<h1>Research Projects</h1>
 				</div>
 
@@ -181,138 +368,6 @@ A system for modeling 3D infrared building of real scenes.</pre> <!-- put </pre>
 
 				<p>&nbsp;</p>
 			</div><!-- /#main -->
-
-
-			<div id="main" class="span12" role="main">
-				<div class="page-header">
-					<h1>Publications</h1>
-				</div>
-
-				<div align="center">
-					<img src="/images/scholar.png" width="15" height="15" /> <a href="https://scholar.google.com.hk/citations?user=uaKgQSEAAAAJ&hl=en">Google Scholar</a>
-					&nbsp;&nbsp;&middot;&nbsp;&nbsp;
-					<img src="/images/dblp.png" width="15" height="15" /> <a href="http://dblp.uni-trier.de/pers/hd/h/Hu:Yongtao">DBLP</a>
-				</div>
-
-				<div class="row" style="margin-bottom: 1em;">
-					<div class="span6 offset3">
-						<h2>2015</h2>
-					</div>
-				</div>
-
-				<div class="row" style="margin-bottom: 1em;">
-					<div class="span2 offset1">
-						<a href="/research/publications/speaker-naming/">
-							<img class="dropshadow pull-right" alt="" src="/research/publications/speaker-naming/thumbnail.png" width="150" height="90" />
-						</a>
-					</div>
-					<div class="span8">
-						<a href="/research/publications/speaker-naming/">
-							<strong>Deep Multimodal Speaker Naming</strong>
-						</a>
-						<br />
-						Yongtao Hu,
-						<a href="http://www.jimmyren.com/">Jimmy Ren</a>,
-						<a href="http://jwdai.net/">Jingwen Dai</a>,
-						<a href="http://iris.usc.edu/Vision-Users/OldUsers/cyuan/">Chang Yuan</a>,
-						<a href="http://lxu.me/">Li Xu</a>, and
-						<a href="http://i.cs.hku.hk/~wenping/">Wenping Wang</a>
-						<br />
-						<em>ACM MM 2015</em>
-						<br />
-						<em>"realtime speaker naming through deeply learned face-audio fusion"</em>
-						<br />
-						<ul class="inline middot">
-							<li><em class="icon-home"></em> <a href="/research/publications/speaker-naming/">project page</a></li>
-							<li><em class="icon-file"></em> <a href="http://arxiv.org/pdf/1507.04831v1.pdf">arXiv</a></li>
-							<li>
-								<em class="icon-circle-info"></em>
-								<a class="toggle_text_link" onclick="javascript:toggle(hu2015speakernaming);">abstract</a>
-								<pre id="hu2015speakernaming" class="invisible_text">
-Automatic speaker naming is the problem of localizing as well as identifying each speaking character in a TV/movie/live show video. This is a challenging problem mainly attributes to its multimodal nature, namely face cue alone is insufficient to achieve good performance. Previous multimodal approaches to this problem usually process the data of different modalities individually and merge them using handcrafted heuristics. Such approaches work well for simple scenes, but fail to achieve high performance for speakers with large appearance variations. In this paper, we propose a novel convolutional neural networks (CNN) based learning framework to automatically learn the fusion function of both face and audio cues. We show that without using face tracking, facial landmark localization or subtitle/transcript, our system with robust multimodal feature extraction is able to achieve state-of-the-art speaker naming performance evaluated on two diverse TV series. The dataset and implementation of our algorithm are publicly available online.</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
-							</li>
-							<li><em class="icon-briefcase"></em> <a href="/research/publications/speaker-naming/dataset">dataset</a></li>
-							<li><em class="icon-turtle"></em> <a href="https://bitbucket.org/herohuyongtao/mm15-speaker-naming">source code</a></li>
-							<li>
-								<em class="icon-bookmark"></em>
-								<a class="toggle_text_link" onclick="javascript:toggle(hu2015speakernaming2);">bibtex</a>
-								<pre id="hu2015speakernaming2" class="invisible_text">
-@inproceedings{hu2015deep,
-  title={{Deep Multimodal Speaker Naming}},
-  author={Hu, Yongtao and Ren, Jimmy SJ. and Dai, Jingwen and Yuan, Chang and Xu, Li and Wang, Wenping},
-  booktitle={Proceedings of the 23rd Annual ACM International Conference on Multimedia},
-  pages={xxx--xxx},
-  year={2015},
-  organization={ACM}
-}</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
-							</li>
-							<li><em class="icon-chevron-right"></em> <a href="http://dx.doi.org/10.1145/2733373.2806293">DOI</a></li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="row" style="margin-bottom: 1em;">
-					<div class="span6 offset3">
-						<h2>2014</h2>
-					</div>
-				</div>
-
-				<div class="row" style="margin-bottom: 1em;">
-					<div class="span2 offset1">
-						<a href="/research/publications/speaker-following-subtitles/">
-							<img class="dropshadow pull-right" alt="" src="/research/publications/speaker-following-subtitles/thumbnail.png" width="150" height="90" />
-						</a>
-					</div>
-					<div class="span8">
-						<a href="/research/publications/speaker-following-subtitles/">
-							<strong>Speaker-Following Video Subtitles</strong>
-						</a>
-						<br />
-						Yongtao Hu,
-						<a href="http://www0.cs.ucl.ac.uk/staff/j.kautz/">Jan Kautz</a>,
-						<a href="http://i.cs.hku.hk/~yzyu/">Yizhou Yu</a>, and
-						<a href="http://i.cs.hku.hk/~wenping/">Wenping Wang</a>
-						<br />
-						<em>ACM TOMM 2014</em>
-						<br />
-						<em>"auto-generate speaker-following subtitles to enhance video viewing experience"</em>
-						<br />
-						<ul class="inline middot">
-							<li><em class="icon-home"></em> <a href="/research/publications/speaker-following-subtitles/">project page</a></li>
-							<li><em class="icon-file"></em> <a href="http://arxiv.org/pdf/1407.5145v1.pdf">arXiv (with color)</a></li>
-							<li><em class="icon-file"></em> <a href="/research/publications/speaker-following-subtitles/paper.pdf">paper</a></li>
-							<li>
-								<em class="icon-circle-info"></em>
-								<a class="toggle_text_link" onclick="javascript:toggle(hu2014speakerfollowing2);">abstract</a>
-								<pre id="hu2014speakerfollowing2" class="invisible_text">
-We propose a new method for improving the presentation of subtitles in video (e.g. TV and movies). With conventional subtitles, the viewer has to constantly look away from the main viewing area to read the subtitles at the bottom of the screen, which disrupts the viewing experience and causes unnecessary eyestrain. Our method places on-screen subtitles next to the respective speakers to allow the viewer to follow the visual content while simultaneously reading the subtitles. We use novel identification algorithms to detect the speakers based on audio and visual information. Then the placement of the subtitles is determined using global optimization. A comprehensive usability study indicated that our subtitle placement method outperformed both conventional fixed-position subtitling and another previous dynamic subtitling method in terms of enhancing the overall viewing experience and reducing eyestrain.</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
-							</li>
-							<li>
-								<em class="icon-bookmark"></em>
-								<a class="toggle_text_link" onclick="javascript:toggle(hu2014speakerfollowing);">bibtex</a>
-								<pre id="hu2014speakerfollowing" class="invisible_text">
-@article{hu2014speaker,
-  title={{Speaker-Following Video Subtitles}},
-  author={Hu, Yongtao and Kautz, Jan and Yu, Yizhou and Wang, Wenping},
-  journal={ACM Transactions on Multimedia Computing, Communications, and Applications (TOMM)},
-  volume={11},
-  number={2},
-  articleno={32},
-  numpages={17},
-  year={2014},
-  publisher={ACM}
-}</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
-							</li>
-							<li><em class="icon-chevron-right"></em> <a href="http://dx.doi.org/10.1145/2632111">DOI</a></li>
-						</ul>
-					</div>
-				</div>
-
-				<p>&nbsp;</p>
-
-			</div><!-- /#main -->
-		</div><!-- /#content -->
-    </div><!-- /#wrap -->
 
 	<footer id="content-info" class="container" role="contentinfo">
 		<table width="100%">
