@@ -220,7 +220,7 @@ ol.linenums li {
 }
 
 /* relative size display for videos, e.g. Youtube, based on: http://www.h3xed.com/web-development/how-to-make-a-responsive-100-width-youtube-iframe-embed */
-.container {
+.video_container {
     position: relative;
     width: 100%;
     height: 0;
