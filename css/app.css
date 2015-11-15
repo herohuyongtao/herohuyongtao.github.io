@@ -218,17 +218,3 @@ ol.linenums li {
   line-height: 20px;
   text-shadow: 0 1px 0 #fff;
 }
-
-/* relative size display for videos, e.g. Youtube, based on: http://www.h3xed.com/web-development/how-to-make-a-responsive-100-width-youtube-iframe-embed */
-.video_container {
-    position: relative;
-    width: 100%;
-    height: 0;
-}
-.video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60%;
-    height: 60%;
-}
