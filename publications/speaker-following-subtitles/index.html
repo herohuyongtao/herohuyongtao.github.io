@@ -7,7 +7,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Deep Multimodal Speaker Naming | Yongtao Hu</title>
+	<title>Speaker-Following Video Subtitles | Yongtao Hu</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="/js/vendor/modernizr-2.5.3.min.js"></script>
@@ -46,7 +46,8 @@
 				<nav id="nav-main" class="nav-collapse" role="navigation">
 					<ul class="nav">
 						<li class="menu-home"><a href="/">Home</a></li>
-						<li class="menu-research active active"><a href="/research/">Research</a></li>
+						<li class="menu-publications active active"><a href="/publications/">Publications</a></li>
+						<li class="menu-projects"><a href="/projects/">Projects</a></li>
 						<li class="menu-cv"><a href="/cv/">CV</a></li>
 						<li class="menu-news"><a href="/news/">News</a></li>
 						<li class="menu-links"><a href="/links/">Links</a></li>
@@ -60,15 +61,13 @@
 		<div id="content" class="row">
 			<div id="main" class="span12" role="main">
 				<div class="page-header">
-					<h1>Deep Multimodal Speaker Naming</h1>
+					<h1>Speaker-Following Video Subtitles</h1>
 				</div>
 
 				<p style="text-align: center;">
-					<a href="http://herohuyongtao.github.io/">Yongtao Hu</a><sup>1, 2</sup>
-					<a href="http://www.jimmyren.com/">Jimmy SJ. Ren</a><sup>3</sup>
-					<a href="http://jwdai.net/">Jingwen Dai</a><sup>4</sup>
-					<a href="http://iris.usc.edu/Vision-Users/OldUsers/cyuan/">Chang Yuan</a><sup>2</sup>
-					<a href="http://lxu.me/">Li Xu</a><sup>3</sup>
+					<a href="http://herohuyongtao.github.io/">Yongtao Hu</a><sup>1</sup>
+					<a href="http://jankautz.com/">Jan Kautz</a><sup>2</sup>
+					<a href="http://i.cs.hku.hk/~yzyu/">Yizhou Yu</a><sup>1</sup>
 					<a href="http://i.cs.hku.hk/~wenping/">Wenping Wang</a><sup>1</sup>
 				</p>
 				<p style="text-align: center;">
@@ -76,49 +75,51 @@
 					The University of Hong Kong, Hong Kong
 					&nbsp;&nbsp;&nbsp;&nbsp;
 					<sup>2</sup>
-					Lenovo Group Limited, Hong Kong
-					&nbsp;&nbsp;&nbsp;&nbsp;
-					<sup>3</sup>
-					SenseTime Group Limited, Hong Kong
-					&nbsp;&nbsp;&nbsp;&nbsp;
-					<sup>4</sup>
-					Xim Industry Inc., Guangzhou
+					University College London, United Kingdom
 				</p>
 				<p style="text-align: center;">
-					<em>The 23rd Annual ACM International Conference on Multimedia (ACM MM 2015)</em>
+					<em>ACM Transactions on Multimedia Computing, Communications and Applications (ACM TOMM 2014)</em>
 				</p>
+				<!-- un-comment this if want to add image>
 				<div style="text-align: center;">
-					<img class="size-full wp-image-96 " style="margin: 1em 0; height: auto;" title="Teaser image" src="teaser.png" alt="" width="1000" />
+					<img class="size-full wp-image-96 " style="margin: 1em 0; height: auto;" title="Teaser image" src="http://herohuyongtao.github.io/research/publications/speaker-following-subtitles/show.png" alt="" width="600" />
 					<br />
-					Multimodal learning framework for speaker naming.
+					Sample results of our system.
+					<br />
+					In a) b) c), black/white bars are the active time (active in black, non-active in white).
 				</div>
 				<hr />
+				<-->
 				<div style="text-align: center;">
-					<iframe width="640" height="480" src="//www.youtube.com/embed/0QyC6cEwcyQ" frameborder="0" allowfullscreen></iframe>
+					<iframe width="640" height="480" src="//www.youtube.com/embed/Dvm3QoktLEo" frameborder="0" allowfullscreen></iframe>
+					<br />
+					Sample result for TV "Friends.S10E15".
+					<br />
+					(French audio, English subtitle)
 				</div>
 				<hr />
 				<h2>Abstract</h2>
 				<p>
-					Automatic speaker naming is the problem of localizing as well as identifying each speaking character in a TV/movie/live show video. This is a challenging problem mainly attributes to its multimodal nature, namely face cue alone is insufficient to achieve good performance. Previous multimodal approaches to this problem usually process the data of diﬀerent modalities individually and merge them using handcrafted heuristics. Such approaches work well for simple scenes, but fail to achieve high performance for speakers with large appearance variations. In this paper, we propose a novel convolutional neural networks (CNN) based learning framework to automatically learn the fusion function of both face and audio cues. We show that without using face tracking, facial landmark localization or subtitle/transcript, our system with robust multimodal feature extraction is able to achieve state-of-the-art speaker naming performance evaluated on two diverse TV series. The dataset and implementation of our algorithm are publicly available online.
+					We propose a new method for improving the presentation of subtitles in video (e.g. TV and movies). With conventional subtitles, the viewer has to constantly look away from the main viewing area to read the subtitles at the bottom of the screen, which disrupts the viewing experience and causes unnecessary eyestrain. Our method places on-screen subtitles next to the respective speakers to allow the viewer to follow the visual content while simultaneously reading the subtitles. We use novel identification algorithms to detect the speakers based on audio and visual information. Then the placement of the subtitles is determined using global optimization. A comprehensive usability study indicated that our subtitle placement method outperformed both conventional fixed-position subtitling and another previous dynamic subtitling method in terms of enhancing the overall viewing experience and reducing eyestrain.
 				</p>
 				<h2>Downloads</h2>
 				<ul class="unstyled">
-					<li><em class="icon-file"></em> <a href="paper.pdf">Paper</a> (PDF, 1.2 MB)</li>
-					<li><em class="icon-picture"></em> <a href="poster.pdf">Poster</a> (PDF, 1.4 MB)</li>
-					<li><em class="icon-briefcase"></em> <a href="dataset">Dataset</a> (Multimodal Face+Audio Dataset)</li>
-					<li><em class="icon-turtle"></em> <a href="https://bitbucket.org/herohuyongtao/mm15-speaker-naming">Source code</a> (MATLAB, hosted on BitBucket)</li>
-					<!-- <li><em class="icon-facetime-video"></em> <a href="supp_video.mp4">Supplementary video</a> (MP4, 9.5 MB)</li>
-					<-->
+					<li><em class="icon-file"></em> <a href="http://arxiv.org/pdf/1407.5145v1.pdf">arXiv (with color)</a> (PDF, 2.6 MB)</li>
+					<li><em class="icon-file"></em> <a href="paper.pdf">Paper</a> (PDF, 4.1 MB)</li>
+					<li><em class="icon-picture"></em> <a href="poster.pdf">Poster</a> (PDF, 8.7 MB)</li>
+					<li><em class="icon-download-alt"></em> <a href="user-study.zip">User study</a> (ZIP, 0.1 MB)</li>
 				</ul>
 				<h2>Bibtex</h2>
 				<pre>
-@inproceedings{hu2015deep,
-  title={{Deep Multimodal Speaker Naming}},
-  author={Hu, Yongtao and Ren, Jimmy SJ. and Dai, Jingwen and Yuan, Chang and Xu, Li and Wang, Wenping},
-  booktitle={Proceedings of the 23rd Annual ACM International Conference on Multimedia},
-  pages={1107--1110},
-  year={2015},
-  organization={ACM}
+@article{hu2014speaker,
+  title={{Speaker-Following Video Subtitles}},
+  author={Hu, Yongtao and Kautz, Jan and Yu, Yizhou and Wang, Wenping},
+  journal={ACM Transactions on Multimedia Computing, Communications, and Applications (TOMM)},
+  volume={11},
+  number={2},
+  pages={32:1--32:17},
+  year={2014},
+  publisher={ACM}
 }</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
 			</div><!-- /#main -->
 		</div><!-- /#content -->
@@ -131,11 +132,11 @@
 					<p class="copy"><small>&copy; 2014-2015 Yongtao Hu</small></p>
 				</td>
 				<td style="text-align:center">
-					<p class="copy"><small>Last updated on Oct. 30, 2015</small></p>
+					<p class="copy"><small>Last updated on 2015.10.15.</small></p>
 				</td>
 				<td style="text-align:right">
 					<a href="http://SiteStates.com" title="Site access statistics">
-						<img src="http://SiteStates.com/show/image/31190.jpg" border="0" />
+						<img src="http://SiteStates.com/show/image/31189.jpg" border="0" />
 					</a>
 				</td>
 			</tr>
