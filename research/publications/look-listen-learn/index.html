@@ -7,7 +7,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Deep Multimodal Speaker Naming | Yongtao Hu</title>
+	<title>Look, Listen and Learn - A Multimodal LSTM for Speaker Identiﬁcation | Yongtao Hu</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="/js/vendor/modernizr-2.5.3.min.js"></script>
@@ -46,9 +46,8 @@
 				<nav id="nav-main" class="nav-collapse" role="navigation">
 					<ul class="nav">
 						<li class="menu-home"><a href="/">Home</a></li>
-						<li class="menu-publications active active"><a href="/publications/">Publications</a></li>
-						<li class="menu-projects"><a href="/projects/">Projects</a></li>
-						<li class="menu-cv"><a href="/cv/">CV</a></li>
+						<li class="menu-publications active active"><a href="/research/">Research</a></li>
+						<li class="menu-cv"><a href="/cv/">Resume</a></li>
 						<li class="menu-news"><a href="/news/">News</a></li>
 						<li class="menu-links"><a href="/links/">Links</a></li>
 					</ul>
@@ -61,65 +60,54 @@
 		<div id="content" class="row">
 			<div id="main" class="span12" role="main">
 				<div class="page-header">
-					<h1>Deep Multimodal Speaker Naming</h1>
+					<h1>Look, Listen and Learn - A Multimodal LSTM for Speaker Identiﬁcation</h1>
 				</div>
 
 				<p style="text-align: center;">
-					<a href="http://herohuyongtao.github.io/">Yongtao Hu</a><sup>1, 2</sup>
-					<a href="http://www.jimmyren.com/">Jimmy SJ. Ren</a><sup>3</sup>
-					<a href="http://jwdai.net/">Jingwen Dai</a><sup>4</sup>
-					<a href="http://iris.usc.edu/Vision-Users/OldUsers/cyuan/">Chang Yuan</a><sup>2</sup>
-					<a href="http://lxu.me/">Li Xu</a><sup>3</sup>
-					<a href="http://i.cs.hku.hk/~wenping/">Wenping Wang</a><sup>1</sup>
+				    <a href="http://www.jimmyren.com/">Jimmy SJ. Ren</a><sup>1</sup>
+				    <a href="http://herohuyongtao.github.io/">Yongtao Hu</a><sup>2</sup>
+				    <a href="http://gdriv.es/yuwing">Yu-Wing Tai</a><sup>1</sup>
+				    <a href="http://i.cs.hku.hk/~cwang/">Chuan Wang</a><sup>2</sup>
+				    <a href="http://lxu.me/">Li Xu</a><sup>1</sup>
+				    <a href="https://www.linkedin.com/in/wenxiu-sun-bb6b292b">Wenxiu Sun</a><sup>1</sup>
+				    <a href="http://www.yan-qiong.com/">Qiong Yan</a><sup>1</sup>
 				</p>
 				<p style="text-align: center;">
 					<sup>1</sup>
-					The University of Hong Kong, Hong Kong
-					&nbsp;&nbsp;&nbsp;&nbsp;
-					<sup>2</sup>
-					Lenovo Group Limited, Hong Kong
-					&nbsp;&nbsp;&nbsp;&nbsp;
-					<sup>3</sup>
 					SenseTime Group Limited, Hong Kong
 					&nbsp;&nbsp;&nbsp;&nbsp;
-					<sup>4</sup>
-					Xim Industry Inc., Guangzhou
+					<sup>2</sup>
+					The University of Hong Kong, Hong Kong
 				</p>
 				<p style="text-align: center;">
-					<em>The 23rd Annual ACM International Conference on Multimedia (ACM MM 2015)</em>
+					<em>The 30th AAAI Conference on Artificial Intelligence (AAAI 2016)</em>
 				</p>
 				<div style="text-align: center;">
-					<img class="size-full wp-image-96 " style="margin: 1em 0; height: auto;" title="Teaser image" src="teaser.png" alt="" width="1000" />
+					<img class="size-full wp-image-96 " style="margin: 1em 0; height: auto;" title="Teaser image" src="teaser.png" alt="" width="720" />
 					<br />
-					Multimodal learning framework for speaker naming.
-				</div>
-				<hr />
-				<div style="text-align: center;">
-					<iframe width="640" height="480" src="//www.youtube.com/embed/0QyC6cEwcyQ" frameborder="0" allowfullscreen></iframe>
+					Figure: (a) Face sequence with different kinds of degradations and variations. Using the previous CNN methods cannot recognize the speakers correctly. In contrast, the speakers can be successfully recognized by our LSTM in both single-modal and multimodal settings. (b) Our multimodal LSTM is robust to both image degradation and distractors. Yellow bounding boxes are the speakers. Red bounding boxes are the non-speakers, the distractors.
 				</div>
 				<hr />
 				<h2>Abstract</h2>
 				<p>
-					Automatic speaker naming is the problem of localizing as well as identifying each speaking character in a TV/movie/live show video. This is a challenging problem mainly attributes to its multimodal nature, namely face cue alone is insufficient to achieve good performance. Previous multimodal approaches to this problem usually process the data of diﬀerent modalities individually and merge them using handcrafted heuristics. Such approaches work well for simple scenes, but fail to achieve high performance for speakers with large appearance variations. In this paper, we propose a novel convolutional neural networks (CNN) based learning framework to automatically learn the fusion function of both face and audio cues. We show that without using face tracking, facial landmark localization or subtitle/transcript, our system with robust multimodal feature extraction is able to achieve state-of-the-art speaker naming performance evaluated on two diverse TV series. The dataset and implementation of our algorithm are publicly available online.
+					Speaker identiﬁcation refers to the task of localizing the face of a person who has the same identity as the ongoing voice in a video. This task not only requires collective perception over both visual and auditory signals, the robustness to handle severe quality degradations and unconstrained content variations are also indispensable. In this paper, we describe a novel multimodal Long Short-Term Memory (LSTM) architecture which seamlessly uniﬁes both visual and auditory modalities from the beginning of each sequence input. The key idea is to extend the conventional LSTM by not only sharing weights across time steps, but also sharing weights across modalities. We show that modeling the temporal dependency across face and voice can signiﬁcantly improve the robustness to content quality degradations and variations. We also found that our multimodal LSTM is robustness to distractors, namely the non-speaking identities. We applied our multimodal LSTM to The Big Bang Theory dataset and showed that our system outperforms the state-of-the-art systems in speaker identification with lower false alarm rate and higher recognition accuracy.
 				</p>
 				<h2>Downloads</h2>
 				<ul class="unstyled">
-					<li><em class="icon-file"></em> <a href="paper.pdf">Paper</a> (PDF, 1.2 MB)</li>
-					<li><em class="icon-picture"></em> <a href="poster.pdf">Poster</a> (PDF, 1.4 MB)</li>
-					<li><em class="icon-briefcase"></em> <a href="dataset">Dataset</a> (Multimodal Face+Audio Dataset)</li>
-					<li><em class="icon-turtle"></em> <a href="https://bitbucket.org/herohuyongtao/mm15-speaker-naming">Source code</a> (MATLAB, hosted on BitBucket)</li>
+					<li><em class="icon-file"></em> <a href="paper.pdf">Paper</a> (PDF, 0.5 MB)</li>
+					<li><em class="icon-turtle"></em> <a href="https://github.com/jimmy-ren/lstm_speaker_naming_aaai16">Source code & dataset</a> (MATLAB, hosted on Github)</li>
+					<li><em class="icon-turtle"></em> <a href="https://github.com/jimmy-ren/vLSTM">Updated version of multimodal LSTM and more applications</a> (MATLAB, hosted on Github)</li>
 					<!-- <li><em class="icon-facetime-video"></em> <a href="supp_video.mp4">Supplementary video</a> (MP4, 9.5 MB)</li>
 					<-->
 				</ul>
 				<h2>Bibtex</h2>
 				<pre>
-@inproceedings{hu2015deep,
-  title={{Deep Multimodal Speaker Naming}},
-  author={Hu, Yongtao and Ren, Jimmy SJ. and Dai, Jingwen and Yuan, Chang and Xu, Li and Wang, Wenping},
-  booktitle={Proceedings of the 23rd Annual ACM International Conference on Multimedia},
-  pages={1107--1110},
-  year={2015},
-  organization={ACM}
+@inproceedings{ren2016look,
+  title={{Look, Listen and Learn - A Multimodal LSTM for Speaker Identification}},
+  author={Ren, Jimmy SJ. and Hu, Yongtao and Tai, Yu-Wing and Wang, Chuan and Xu, Li and Sun, Wenxiu and Yan, Qiong},
+  booktitle={Proceedings of the 30th AAAI Conference on Artificial Intelligence},
+  pages={3581--3587},
+  year={2016}
 }</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
 			</div><!-- /#main -->
 		</div><!-- /#content -->
@@ -129,14 +117,14 @@
 		<table width="100%">
 			<tr>
 				<td>
-					<p class="copy"><small>&copy; 2014-2015 Yongtao Hu</small></p>
+					<p class="copy"><small>&copy; 2014-2016 Yongtao Hu</small></p>
 				</td>
 				<td style="text-align:center">
-					<p class="copy"><small>Last updated on Oct. 30, 2015</small></p>
+					<p class="copy"><small>Last updated on 02/17/2016</small></p>
 				</td>
 				<td style="text-align:right">
 					<a href="http://SiteStates.com" title="Site access statistics">
-						<img src="http://SiteStates.com/show/image/31190.jpg" border="0" />
+						<img src="http://SiteStates.com/show/image/31385.jpg" border="0" />
 					</a>
 				</td>
 			</tr>
