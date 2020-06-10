@@ -79,7 +79,7 @@
 				</div>
 				<hr />
 				<h2>Abstract</h2>
-				<p>
+				<p align="justify">
 					Fiducial markers have been playing an important role in augmented reality (AR), robot navigation, and general applications where the relative pose between a camera and an object is required. Here we introduce TopoTag, a robust and scalable topological fiducial marker system, which supports reliable and accurate pose estimation from a single image. TopoTag uses topological and geometrical information in marker detection to achieve higher robustness. Topological information is extensively used for 2D marker detection, and further corresponding geometrical information for ID decoding. Robust 3D pose estimation is achieved by taking advantage of all TopoTag vertices. Without sacrificing bits for higher recall and precision like previous systems, TopoTag can use full bits for ID encoding. TopoTag supports tens of thousands unique IDs and easily extends to millions of unique tags resulting in massive scalability. We collected a large test dataset including in total 169,713 images for evaluation, involving in-plane and out-of-plane rotation, image blur, different distances and various backgrounds, etc. Experiments on the dataset and real indoor and outdoor scene tests with a rolling shutter camera both show that TopoTag significantly outperforms previous fiducial marker systems in terms of various metrics, including detection accuracy, vertex jitter, pose jitter and accuracy, etc. In addition, TopoTag supports occlusion as long as the main tag topological structure is maintained and allows for flexible shape design where users can customize internal and external marker shapes. Code for our marker design/generation, marker detection, and dataset are available at https://herohuyongtao.github.io/research/publications/topo-tag/.
 				</p>
 				<h2>Paper</h2>
@@ -94,9 +94,30 @@
 				</ul>
 				<h2 id="dataset">Dataset</h2>
 				<ul class="unstyled">
+					<li><em class="icon-camera"></em> <a href="camera_params.txt">Parameters of used camera</a> (TXT)</li>
 					<li><em class="icon-briefcase"></em> Collection setup: [<a href="https://drive.google.com/open?id=1XFeM6LgEG7EqibTTS0tAtpLLmqgfCoHh"><b>Seq-#1</b></a> (MP4, 4 MB), <a href="https://drive.google.com/open?id=1E3V1RBMJqky9QUob3XzxQnopMxiwS8bN"><b>Seq-#2</b></a> (MP4, 5 MB)]</li>
 					<li><em class="icon-briefcase"></em> Samples for TopoTag_4x4_Square: [<a href="https://drive.google.com/open?id=16tOz9JXy-XUle_HLe7awOZ2dyUo19ucp"><b>Seq-#1</b></a> (AVI, 13 MB), <a href="https://drive.google.com/open?id=1aPkSfRW3Iy3fhTlvYHRN1h3N4CCpYDFI"><b>Seq-#2</b></a> (AVI, 16 MB), <a href="https://drive.google.com/open?id=1NKXNr0JKac28ftRcub-ZDh_mYiQpyrif"><b>Seq-#3</b></a> (AVI, 99 MB)] (<em>Note: images maybe compressed in video</em>)</li>
-					<li><em class="icon-briefcase"></em> <em>Full dataset [RAR, 262 GB] in images for all tags coming soon!</em></li>
+					<li>
+						<em class="icon-briefcase"></em> <a href="https://pan.baidu.com/s/1KABe4hCb03PTn77t816jgw"><b>Full dataset</b></a> [single folder, 247 GB, password: ehep] in images for all tags. You use following links if you want to download data for specific tags. Note: all data is hosted on Baidu Drive.
+						<ul>
+							<li><a href="https://pan.baidu.com/s/1xhiHGbiIGmC_U70bxe82JA">AprilTag (16h5)</a> (ZIP, 15.4G, password: ja7o)</li>
+							<li><a href="https://pan.baidu.com/s/1Dg263bFX23vfKyJhPnOcew">AprilTag (25h7)</a> (ZIP, 15.4G, password: fi53)</li>
+							<li><a href="https://pan.baidu.com/s/1d2Ng0Kr3w6oyqhijbAgxhg">AprilTag (25h9)</a> (ZIP, 15.4G, password: hqp9)</li>
+							<li><a href="https://pan.baidu.com/s/1Ci3LeT0XJ4IIRqCNoiGgJg">AprilTag (36h9)</a> (ZIP, 15.5G, password: vidm)</li>
+							<li><a href="https://pan.baidu.com/s/1VTjDGzXKUz9rzb68cpHFhA">AprilTag (36h11)</a> (ZIP, 15.4G, password: kssb)</li>
+							<li><a href="https://pan.baidu.com/s/11rdP7QIgN-lvfHW2JPt6Zw">ARToolKit</a> (ZIP, 15.5G, password: ve1f)</li>
+							<li><a href="https://pan.baidu.com/s/1qhmQDt_SIT426M52-3sbmw">ARToolKitPlus</a> (ZIP, 15.4G, password: c3tm)</li>
+							<li><a href="https://pan.baidu.com/s/1k3ppdoW4WAwyQC__G6PCjw">ArUco (16h3)</a> (ZIP, 15.3G, password: 9ig0)</li>
+							<li><a href="https://pan.baidu.com/s/11ryjm0q37PFbuy3k9aOoVg">ArUco (25h7)</a> (ZIP, 15.4G, password: f73x)</li>
+							<li><a href="https://pan.baidu.com/s/1I30-6mQELEBX6GcAXrBgIA">ArUco (36h12)</a> (ZIP, 15.5G, password: ratx)</li>
+							<li><a href="https://pan.baidu.com/s/1AQiAmddpABnRod5bNCFTkA">ChromaTag</a> (ZIP, 15.5G, password: hhv6)</li>
+							<li><a href="https://pan.baidu.com/s/1QGRyBHpMokhvRa-3vMP-MA">RuneTag</a> (ZIP, 15.6G, password: qqz9)</li>
+							<li><a href="https://pan.baidu.com/s/1NicNo5WkeY7Fpx7VvgYUbg">TopoTag (3x3), Square</a> (ZIP, 15.4G, password: 6tbd)</li>
+							<li><a href="https://pan.baidu.com/s/1HQomhc9p4lrRQTyie3essQ">TopoTag (4x4), Square</a> (ZIP, 15.5G, password: 39t7)</li>
+							<li><a href="https://pan.baidu.com/s/1r_r79PzpoP28eQpyUew5PQ">TopoTag (3x3), Circle</a> (ZIP, 15.4G, password: 6klu)</li>
+							<li><a href="https://pan.baidu.com/s/1FlS2RKjvEka9dfOBQN8ixA">TopoTag (4x4), Circle</a> (ZIP, 15.4G, password: wr9r)</li>
+						</ul>
+					</li>
 				</ul>
 				<h2>Bibtex</h2>
 				<pre>
@@ -118,10 +139,10 @@
 		<table width="100%">
 			<tr>
 				<td>
-					<p class="copy"><small>&copy; 2020 Yongtao Hu</small></p>
+					<p class="copy"><small>&copy; 2014-2020 Yongtao Hu</small></p>
 				</td>
 				<td style="text-align:center">
-					<p class="copy"><small>Last updated: 04/2020</small></p>
+					<p class="copy"><small>Last updated: 06/2020</small></p>
 				</td>
 				<td style="text-align:right">
 					<a href="https://SiteStates.com" title="Site access statistics">
