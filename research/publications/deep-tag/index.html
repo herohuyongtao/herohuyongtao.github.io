@@ -1,0 +1,176 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+
+	<title>DeepTag: A General Framework for Fiducial Marker Design and Detection | Yongtao Hu</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="/js/vendor/modernizr-2.5.3.min.js"></script>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
+
+	<script src="/js/vendor/spamspan.min.js"></script>
+	<script src="/js/vendor/prettify.js"></script>
+
+	<link rel="stylesheet" href="/plugins/social-media-widget/social_widget.css?ver=3.9.1">
+	<link rel="stylesheet" href="/glyphicons/css/glyphicons.css">
+	<link rel="stylesheet" href="/css/bootstrap.css">
+	<link rel="stylesheet" href="/css/bootstrap-responsive.css">
+	<link rel="stylesheet" href="/css/app.css">
+	<script type='text/javascript' src='/js/plugins.js'></script>
+	<script type='text/javascript' src='/js/main.js'></script>
+	<link rel="canonical" href="/publications/speaker-following-subtitles/">
+	<link rel="shortcut icon" href="/images/logo.ico">
+</head>
+
+<body class="page page-id-62 page-parent page-child parent-pageid-25 page-template-default top-navbar">
+  <!--[if lt IE 7]><div class="alert">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</div><![endif]-->
+
+    <header id="banner" class="navbar navbar-fixed-top" role="banner">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+				<a class="brand" href="/">
+					Yongtao Hu
+				</a>
+				<nav id="nav-main" class="nav-collapse" role="navigation">
+					<ul class="nav">
+						<li class="menu-home"><a href="/">Home</a></li>
+						<li class="menu-research active active"><a href="/research/">Research</a></li>
+						<li class="menu-cv"><a href="https://www.dropbox.com/s/e1qm7j21xn8fuux/cv.pdf">Resume</a></li>
+						<li class="menu-news"><a href="/news/">News</a></li>
+						<li class="menu-links"><a href="/links/">Links</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+    <div id="wrap" class="container" role="document">
+		<div id="content" class="row">
+			<div id="main" class="span12" role="main">
+				<div class="page-header">
+					<h1>DeepTag: A General Framework for Fiducial Marker Design and Detection</h1>
+				</div>
+
+				<p style="text-align: center;">
+						Zhuming Zhang&nbsp;&nbsp;&nbsp;
+						<a href="/">Yongtao Hu</a>&nbsp;&nbsp;&nbsp;
+				    Guoxing Yu&nbsp;&nbsp;&nbsp;
+				    <a href="http://jwdai.net/">Jingwen Dai</a>
+				</p>			
+				<p style="text-align: center;">
+					Guangdong Virtual Reality Technology Co., Ltd. (aka. Ximmerse), Guangzhou
+				</p>
+				<!--	
+				<p style="text-align: center;">
+					<em>IEEE Transactions on Visualization and Computer Graphics (IEEE TVCG 2020)</em>
+				</p>
+				-->
+				<div style="text-align: center;">
+					<img class="size-full wp-image-96 " style="margin: 1em 0; height: auto;" title="Teaser image" src="teaser.png" alt="" />
+					<br />
+					Left: a general marker design supported by DeepTag. <br />Right: top & bottom rows show detection results of existing methods and DeepTag respectively.
+				</div>
+				<hr />
+				<h2>Abstract</h2>
+				<p align="justify">
+					Abstract—A ﬁducial marker system usually consists of markers, a detection algorithm, and a coding system. The appearance of markers and the detection robustness are generally limited by the existing detection algorithms, which are hand-crafted with traditional low-level image processing techniques. Furthermore, a sophisticatedly designed coding system is required to overcome the shortcomings of both markers and detection algorithms. To improve the ﬂexibility and robustness in various applications, we propose a general deep learning based framework, DeepTag, for ﬁducial marker design and detection. DeepTag not only supports detection of a wide variety of existing marker families, but also makes it possible to design new marker families with customized local patterns. Moreover, we propose an effective procedure to synthesize training data on the ﬂy without manual annotations. Thus, DeepTag can easily adapt to existing and newly-designed marker families. To validate DeepTag and existing methods, beside existing datasets, we further collect a new large and challenging dataset where markers are placed in different view distances and angles. Experiments show that DeepTag well supports different marker families and greatly outperforms the existing methods in terms of both detection robustness and pose accuracy. Both code and dataset are available.
+				</p>
+				<!--						
+				<h2>Paper</h2>
+				<ul class="unstyled">
+					<li><em class="icon-file"></em> <a href="https://arxiv.org/pdf/1908.01450.pdf">Preprint (arXiv)</a> (PDF, 8.9 MB)</li>
+					<li><em class="icon-file"></em> <a href="supp_material.pdf">Supplemental material</a> (PDF, 0.5 MB)</li>
+				</ul>
+				-->
+				<h2 id="code">Code / Tools</h2>
+				<ul class="unstyled">
+					<li><em>coming soon!</em></li>
+					<!--<li><em class="icon-turtle"></em> <a href="https://drive.google.com/open?id=1H5gZ2m39lB76wgu9LfBeLlPnr-K5BuHH">TopoTag Detector</a> (EXE, 5 MB), <em>code coming soon!</em></li>-->
+				</ul>
+				<h2 id="dataset">Dataset</h2>
+				<ul class="unstyled">
+					<li><em class="icon-camera"></em> <a href="camera_params.txt">Parameters of used camera</a> (TXT)</li>
+					<em class="icon-briefcase"></em> <em>coming soon!</em>
+					<!--
+					<li><em class="icon-briefcase"></em> Collection setup: [<a href="https://drive.google.com/open?id=1XFeM6LgEG7EqibTTS0tAtpLLmqgfCoHh"><b>Seq-#1</b></a> (MP4, 4 MB), <a href="https://drive.google.com/open?id=1E3V1RBMJqky9QUob3XzxQnopMxiwS8bN"><b>Seq-#2</b></a> (MP4, 5 MB)]</li>
+					<li><em class="icon-briefcase"></em> Samples for TopoTag_4x4_Square: [<a href="https://drive.google.com/open?id=16tOz9JXy-XUle_HLe7awOZ2dyUo19ucp"><b>Seq-#1</b></a> (AVI, 13 MB), <a href="https://drive.google.com/open?id=1aPkSfRW3Iy3fhTlvYHRN1h3N4CCpYDFI"><b>Seq-#2</b></a> (AVI, 16 MB), <a href="https://drive.google.com/open?id=1NKXNr0JKac28ftRcub-ZDh_mYiQpyrif"><b>Seq-#3</b></a> (AVI, 99 MB)] (<em>Note: images maybe compressed in video</em>)</li>
+					<li>
+						<em class="icon-briefcase"></em> <a href="https://pan.baidu.com/s/1KABe4hCb03PTn77t816jgw"><b>Full dataset</b></a> [single folder, 247 GB, password: ehep] in images for all tags. You use following links if you want to download data for specific tags. Note: all data is hosted on Baidu Drive.
+						<ul>
+							<li><a href="https://pan.baidu.com/s/1xhiHGbiIGmC_U70bxe82JA">AprilTag (16h5)</a> (ZIP, 15.4G, password: ja7o)</li>
+							<li><a href="https://pan.baidu.com/s/1Dg263bFX23vfKyJhPnOcew">AprilTag (25h7)</a> (ZIP, 15.4G, password: fi53)</li>
+							<li><a href="https://pan.baidu.com/s/1d2Ng0Kr3w6oyqhijbAgxhg">AprilTag (25h9)</a> (ZIP, 15.4G, password: hqp9)</li>
+							<li><a href="https://pan.baidu.com/s/1Ci3LeT0XJ4IIRqCNoiGgJg">AprilTag (36h9)</a> (ZIP, 15.5G, password: vidm)</li>
+							<li><a href="https://pan.baidu.com/s/1VTjDGzXKUz9rzb68cpHFhA">AprilTag (36h11)</a> (ZIP, 15.4G, password: kssb)</li>
+							<li><a href="https://pan.baidu.com/s/11rdP7QIgN-lvfHW2JPt6Zw">ARToolKit</a> (ZIP, 15.5G, password: ve1f)</li>
+							<li><a href="https://pan.baidu.com/s/1qhmQDt_SIT426M52-3sbmw">ARToolKitPlus</a> (ZIP, 15.4G, password: c3tm)</li>
+							<li><a href="https://pan.baidu.com/s/1k3ppdoW4WAwyQC__G6PCjw">ArUco (16h3)</a> (ZIP, 15.3G, password: 9ig0)</li>
+							<li><a href="https://pan.baidu.com/s/11ryjm0q37PFbuy3k9aOoVg">ArUco (25h7)</a> (ZIP, 15.4G, password: f73x)</li>
+							<li><a href="https://pan.baidu.com/s/1I30-6mQELEBX6GcAXrBgIA">ArUco (36h12)</a> (ZIP, 15.5G, password: ratx)</li>
+							<li><a href="https://pan.baidu.com/s/1AQiAmddpABnRod5bNCFTkA">ChromaTag</a> (ZIP, 15.5G, password: hhv6)</li>
+							<li><a href="https://pan.baidu.com/s/1QGRyBHpMokhvRa-3vMP-MA">RuneTag</a> (ZIP, 15.6G, password: qqz9)</li>
+							<li><a href="https://pan.baidu.com/s/1NicNo5WkeY7Fpx7VvgYUbg">TopoTag (3x3), Square</a> (ZIP, 15.4G, password: 6tbd)</li>
+							<li><a href="https://pan.baidu.com/s/1HQomhc9p4lrRQTyie3essQ">TopoTag (4x4), Square</a> (ZIP, 15.5G, password: 39t7)</li>
+							<li><a href="https://pan.baidu.com/s/1r_r79PzpoP28eQpyUew5PQ">TopoTag (3x3), Circle</a> (ZIP, 15.4G, password: 6klu)</li>
+							<li><a href="https://pan.baidu.com/s/1FlS2RKjvEka9dfOBQN8ixA">TopoTag (4x4), Circle</a> (ZIP, 15.4G, password: wr9r)</li>
+						</ul>
+					-->
+					</li>
+				</ul>
+<!--
+				<h2>Bibtex</h2>
+				<pre>
+@article{yu2020topotag,
+  title={{TopoTag: A Robust and Scalable Topological Fiducial Marker System}},
+  author={Yu, Guoxing and Hu, Yongtao and Dai, Jingwen},
+  journal={IEEE Transactions on Visualization and Computer Graphics (TVCG)},
+  volume={},
+  number={},
+  pages={},
+  year={2020},
+  publisher={IEEE}
+}</pre> <!-- put </pre> on this line to avoid new unwanted line breaks after bibtex -->
+			</div><!-- /#main -->
+		</div><!-- /#content -->
+    </div><!-- /#wrap -->
+
+	<footer id="content-info" class="container" role="contentinfo">
+		<table width="100%">
+			<tr>
+				<td>
+					<p class="copy"><small>&copy; 2014-2021 Yongtao Hu</small></p>
+				</td>
+				<td style="text-align:center">
+					<p class="copy"><small>Last updated: 05/2021</small></p>
+				</td>
+				<td style="text-align:right">
+					<a href="https://SiteStates.com" title="Site access statistics">
+						<img src="https://SiteStates.com/show/image/33082.jpg" border="0" />
+					</a>
+				</td>
+			</tr>
+		</table>
+	</footer>
+
+	<!-- From http://stackoverflow.com/a/11668413/72470 -->
+	<script>
+	  !function ($) {
+		$(function(){
+		  window.prettyPrint && prettyPrint()
+		})
+	  }(window.jQuery)
+	</script>
+</body>
+</html>
