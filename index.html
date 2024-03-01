@@ -27,16 +27,34 @@
 	<link rel="canonical" href="/">
 	<link rel="shortcut icon" href="/images/logo.ico">
 
-	<!-- to toggle text -->
 	<style type="text/css">
+		/* toggle text */
 		a.toggle_text_link {
 			cursor:pointer;
 		}
-
 		pre.invisible_text {
 			display: none;
 		}
+
+		/* photo, support hover */
+		#photo {
+				background-image: url('/images/me.png');
+				background-size: 100% 100%;
+				height: 240px;
+				width: 180px;
+				margin: 0 1.5em 1em 0; 
+				border: 1px solid #222;
+		}
+		#photo:hover {
+				background-image: url('/images/me2.jpg');
+				background-size: 100% 100%;
+				height: 240px;
+				width: 180px;
+				margin: 0 1.5em 1em 0; 
+				border: 1px solid #222;
+		}
 	</style>
+
 	<script language="javascript" type="text/javascript">
 		function toggle(element) {
 			if(element.style.display=="block") {
@@ -108,7 +126,11 @@
 					</p>
 				</div>
 				<p align="justify">
-					<img class=" wp-image-697 alignleft dropshadow" style="margin: 0 1.5em 1em 0; border: 1px solid #222;" src="/images/me.png" alt="Portrait photo of Yongtao Hu" width="180" height="240" />
+					<div id="photo" class="wp-image-697 alignleft dropshadow">
+						<!--
+						<img class=" wp-image-697 alignleft dropshadow" style="margin: 0 1.5em 1em 0; border: 1px solid #222;" src="/images/me.png" alt="Portrait photo of Yongtao Hu" width="180" height="240" />
+						-->
+					</div>
 
 					I'm now a Research Scientist and Head of X-Lab at <a href="http://www.ximmerse.com/">Guangdong Virtual Reality Technology Co., Ltd. (aka. Ximmerse)</a>. X-Lab is an all-in-one research lab at Ximmerse including algorithm, optical design, interaction design and intellectual property teams, where we dedicate ourselves in offering distinctive & reliable mobile XR hardware and software solutions.
 
